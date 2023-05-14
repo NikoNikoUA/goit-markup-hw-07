@@ -152,16 +152,13 @@
     color: var(--primary-color-heading);
   }
 
-  /* ============ MOBILE ===============  */
-
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+  /* ============ MOBILE HEADER ===============  */
 
   @media screen and (min-width: 428px) {
   .container {
     width: 428px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -176,6 +173,8 @@
   @media screen and (min-width: 1158px) {
     .container {
       width: 1158px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
 
@@ -197,21 +196,20 @@
    }
 
    .page-header {
-    padding: 24px 16px 22px;
+    padding-top: 24px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #E7E9FC;
    }
     
    .mobile-menu-open {
     background-color: transparent; 
     border: none;
     padding: 0;
-
+    height: 22px;
 
   }
 
   .mobile-burger {
-    position: absolute;
-    top: 24px;
-    right: 16px;
     fill: #2E2F42;
   }
 
