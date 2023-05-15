@@ -42,7 +42,7 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-open">
+        <button type="button" class="mobile-menu-open js-open-menu">
           <svg class="mobile-burger" width="32" height="22">
             <use href="./images/icons.svg#burger-icon"></use>
           </svg>
@@ -742,6 +742,103 @@
         </div>
       </div>
     </footer> -->
+
+    <div class="menu-container js-menu-container list" id="mobile-menu">
+      
+      <button class="mobile-menu-close js-close-menu">
+        <svg class="mobile-cross" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu mobile-menu-pages list">
+        <li class="mobile-menu-item">
+          <a
+            class="mobile-menu-link link"
+            href="./index.html"
+            >Studio</a
+          >
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Contacts</a>
+        </li>
+      </ul>
+      
+      <address class="mobile-address">
+        <ul class="mobile-menu list">
+          <li class="mobile-menu-address-tel">
+            <a class="mobile-contact-info mobile-contact-info-tel link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="mobile-menu-address-mail">
+            <a class="mobile-contact-info mobile-contact-info-mail link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+
+      <ul class="mobile-menu sm-footer list">
+        <li class="sm-footer-item">
+          <a
+            href=""
+            class="sm-footer-link sm-list-link"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Instagram"
+          >
+            <svg class="sm-footer-icon sm-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="sm-footer-item">
+          <a
+            href=""
+            class="sm-footer-link sm-list-link"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Twitter"
+          >
+            <svg class="sm-footer-icon sm-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="sm-footer-item">
+          <a
+            href=""
+            class="sm-footer-link sm-list-link"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Facebook"
+          >
+            <svg class="sm-footer-icon sm-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="sm-footer-item">
+          <a
+            href=""
+            class="sm-footer-link sm-list-link"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Linkedin"
+          >
+            <svg class="sm-footer-icon sm-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      
+    </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
