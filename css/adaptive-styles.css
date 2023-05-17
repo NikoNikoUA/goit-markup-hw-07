@@ -856,33 +856,16 @@ background-position: center;
 
 /* ========================== CUSTOMERS ========================== */
 
-@media screen and (max-width: 767px) {
-.customers {
-  padding: 96px 0;
-  }
-  .customers-list-link {
-    width: 190px;
-  }
-  
-.customers-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  row-gap: 72px;
-  column-gap: 16px;
-}
-}
-
 .header-two-customers-section {
   margin-bottom: 72px;
   line-height: 1.1;
 }
 
-
 .customers-list-link {
   color: #8e8f99;
   display: flex;
   border: 1px solid #8e8f99;
+  width: 168px;
   height: 88px;
   border-radius: 4px;
   justify-content: center;
@@ -892,6 +875,22 @@ background-position: center;
     border var(--transition-effect);
 }
 
+@media screen and (max-width: 767px) {
+  .customers {
+    padding: 96px 0;
+    }
+    .customers-list-link {
+      width: 190px;
+    }
+    
+  .customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 72px;
+    column-gap: 16px;
+  }
+  }
 .customers-icon {
   fill: currentColor;
 }
@@ -901,6 +900,152 @@ background-position: center;
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
+
+/* ================ FOOTER MOBILE ============== */
+
+.footer {
+  background-color: #2e2f42;
+  padding: 100px 0;
+}
+
+@media screen and (max-width: 1157px) {
+  .footer {
+    padding: 96px 0px;
+  }
+}
+
+.description-footer {
+  max-width: 264px;
+}
+
+
+.logo-link-footer {
+  display: inline-block;
+  margin-bottom: 16px;
+  
+}
+
+@media screen and (max-width: 767px) {
+  .description-footer {
+    max-width: 268px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+}
+
+
+.social-media-footer {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.sm-footer {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.sm-footer-link:hover,
+.sm-footer-link:focus {
+  background-color: #31d0aa;
+}
+
+.sm-footer-icon {
+  fill: var(--svg-icon-color);
+}
+
+.sm-footer-link {
+  transition: background-color var(--transition-effect);
+}
+
+.subscribe-button {
+  padding: 8px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  background-color: var(--logo-color);
+  border-radius: 4px;
+  border: none;
+  min-width: 165px;
+  height: 40px;
+
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+
+  transition: background-color var(--transition-effect);
+}
+
+
+.input-mail {
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2e2f42;
+  width: 264px;
+  height: 40px;
+    color: white;
+
+  padding: 8px 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .input-mail { 
+    width: 100%;
+    margin-bottom: 16px;
+  
+  }
+  .subscribe-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .block-one-footer,
+  .block-two-footer {
+    margin-bottom: 72px;
+  }
+
+  .block-one-footer {
+    text-align: center;
+  }
+
+  .description-footer {
+    text-align: left;
+  }
+  
+  .social-media-footer {
+    text-align: center;
+  }
+  }
+
+.input-mail::placeholder {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+ }
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: var(--accent-color);
+}
+
+
+
 /* ******************* TABLET ******************* */
 
 @media screen and (min-width: 768px) {
@@ -935,6 +1080,18 @@ background-position: center;
         url("../images/adaptive/hero-tablet@2x.jpg");
     }
   }
+/* ============ TABLET CUSTOMERS ======== */
+
+/* ================= TABLET FOOTER =============== */
+
+@media screen and (min-width: 768px) {
+  .form-footer {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+}
+  
 
   /* ============================== DESCTOP ============================== */
 
