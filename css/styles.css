@@ -670,7 +670,7 @@ background-position: center;
 
 /* ====================CUSTOMERS===================== */
 
-.header-two-customers-section {
+/* .header-two-customers-section {
   margin-bottom: 72px;
   line-height: 1.1;
 }
@@ -703,7 +703,7 @@ background-position: center;
 .customers-list-link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
-}
+} */
 
 /* =================== FOOTER ================== */
 .footer {
