@@ -1027,12 +1027,9 @@ background-position: center;
 .section-employee-list {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 24px; */
+  gap: 24px;
 }
 
-.section-employee-list-item:not(:last-child) {
-  margin-right: 24px;
-}
 
 .section-employee-list-item {
   flex-basis: calc((100% - 72px) / 4);
