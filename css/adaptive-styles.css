@@ -506,10 +506,10 @@ transition: color var(--transition-effect);
  }
 }
 
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
     
     background-image: linear-gradient(
@@ -530,10 +530,10 @@ transition: color var(--transition-effect);
    }
   }
   
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (-webkit-min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .hero {
       
       background-image: linear-gradient(
@@ -555,10 +555,10 @@ transition: color var(--transition-effect);
      }
     }
     
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (-webkit-min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+      screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1158px),
+      screen and (min-resolution: 192dpi) and (min-width: 1158px),
+      screen and (min-resolution: 2dppx) and (min-width: 1158px) {
       .hero {
         
         background-image: linear-gradient(
@@ -984,16 +984,12 @@ background-position: center;
 
 .section-works-list {
   display: flex;
+  gap: 24px;
 }
 
 .section-works {
   padding-bottom: 120px;
 }
-
-.section-works-list-item:not(:last-child) {
-  margin-right: 24px;
-}
-
 
 @media screen and (max-width: 1157px) {
   .section-works {
