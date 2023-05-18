@@ -243,6 +243,7 @@ button {
   padding: 80px 35px 40px 40px;
   background-color: #fff;
   z-index: 999;
+  overflow-y: scroll;
 
   box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 2px 1px rgba(46, 47, 66, 0.08); 
 
@@ -664,6 +665,7 @@ transition: color var(--transition-effect);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  overflow-y: scroll;
 
   padding: 72px 24px 24px;
 }
@@ -1025,7 +1027,11 @@ background-position: center;
 .section-employee-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  /* gap: 24px; */
+}
+
+.section-employee-list-item:not(:last-child) {
+  margin-right: 24px;
 }
 
 .section-employee-list-item {
