@@ -1228,10 +1228,6 @@ background-position: center;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
-    padding-left: 0;
-  }
-
-  .footer {
     padding-left: 108px;
   }
 
