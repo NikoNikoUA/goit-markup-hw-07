@@ -240,6 +240,11 @@ button {
   position: fixed;
   top: 0;
   left: 0;
+
+  display: flex;
+  flex-direction: column;
+
+
   width: 100vw;
   height: 100vh;
   padding: 80px 35px 40px 40px;
@@ -300,7 +305,7 @@ button {
 }
 
 .mobile-menu-pages {
-  margin-bottom: 284px;
+  margin-bottom: auto;
 }
 
 .mobile-menu-link:hover,
@@ -398,8 +403,13 @@ transition: color var(--transition-effect);
 }
 
 .menu-link-studio-underline {
-  position: relative;
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+.menu-link-studio-underline {
+  position: relative;
+}
 }
 
 .menu-link-studio-underline::after {
@@ -432,12 +442,7 @@ transition: color var(--transition-effect);
   }
   .menu-address-mail {
     margin-bottom: 12px;
-    padding-top: 16px;
     margin-right: 0;
-  }
-
-  .menu-address-tel {
-    padding-bottom: 16px;
   }
   
   .logo-link-header {
@@ -874,7 +879,7 @@ background-position: center;
 
 
 @media screen and (max-width: 1157px) {
-.our-benefits-svg {
+.our-benefits-icon {
   display: none;
 }
   .section-benefits {
@@ -917,11 +922,9 @@ background-position: center;
   .header-three {
     text-align: center;
   }
-  .description-mobile {
+
+  .benefits-section-item:not(:last-child) {
     margin-bottom: 72px;
-  }
-  .description-mobile-last {
-    margin-bottom: 0px;
   }
  }
  
@@ -1001,42 +1004,59 @@ background-position: center;
   }
 }
 
-.section-employee-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+
+.section-employee-list-item {
+  flex-basis: calc(100%);
 }
 
+@media screen and (min-width: 768px) {
+  .section-employee-list-item {
+    flex-basis: calc((100% - 24px) / 2);  
+}
+}
 
+@media screen and (min-width: 1158px) {
 .section-employee-list-item {
   flex-basis: calc((100% - 72px) / 4);
 }
-
-@media screen and (max-width: 767px) {
-  .section-employee-list-item {
-    flex-basis: calc(100%);
-  }
-
-  .section-employee-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 72px;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .container-employees {
     width: 584px;
   }
-  
+}
+
+.section-employee-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+}
+
+ 
+  @media screen and (min-width: 768px) {
   .section-employee-list {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     column-gap: 24px;
     row-gap: 64px;
 }
 }
+
+@media screen and (min-width: 1158px) {
+
+  .section-employee-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  }
+
+
 
 .section-employee-list-item {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
