@@ -649,6 +649,7 @@ transition: color var(--transition-effect);
   transition: transform var(--transition-effect);
 
   min-height: 584px;
+  width: 100%;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -657,15 +658,16 @@ transition: color var(--transition-effect);
   padding: 72px 24px 24px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 428px) and (max-width: 767px) {
   .modal {
-    max-width: 392px;
+      width: 392px;
+      padding: 72px 16px 24px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .modal {
-    min-width: 408px;
+    width: 408px;
   }
 }
 
@@ -1031,6 +1033,7 @@ background-position: center;
 .section-employee-list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 72px;
 }
