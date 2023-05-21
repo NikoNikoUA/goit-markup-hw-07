@@ -410,7 +410,7 @@ transition: color var(--transition-effect);
 .menu-link-studio-underline {
   position: relative;
 }
-}
+
 
 .menu-link-studio-underline::after {
   content: "";
@@ -424,6 +424,7 @@ transition: color var(--transition-effect);
   position: absolute;
   bottom: -1px;
   left: 0;
+}
 }
 
 @media screen and (min-width: 768px) {
@@ -658,7 +659,7 @@ transition: color var(--transition-effect);
 
 @media screen and (max-width: 767px) {
   .modal {
-    min-width: 392px;
+    max-width: 392px;
   }
 }
 
