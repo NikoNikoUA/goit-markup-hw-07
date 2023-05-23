@@ -268,9 +268,10 @@ button {
   right: 28px;
   width: 24px;
   height: 24px;
-  background-color: #e7e9fc;
-  border: 1px solid #2e2f42;
+  background-color: rgba(231, 233, 252, 0.1);
+  border: 1px solid rgba(46, 47, 66, 0.1);
   border-radius: 50%;
+
 
   display: flex;
   justify-content: center;
