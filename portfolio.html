@@ -15,7 +15,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/adaptive-styles.css"/>
   </head>
   <body>
     <!-- HEADER  -->
@@ -30,8 +31,13 @@
           <li class="menu-item"><a class="menu-link link" href="">Contacts</a></li>
         </ul>
       </nav>
+      <button type="button" class="mobile-menu-open js-open-menu">
+        <svg class="mobile-burger" width="32" height="22">
+          <use href="./images/icons.svg#burger-icon"></use>
+        </svg>
+      </button>
       <address class="address">
-        <ul class="menu list">
+        <ul class="menu menu-tablet list">
           <li class="menu-address-mail"><a class="contact-info link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
           <li class="menu-address-tel"><a class="contact-info link" href="tel:+110001111111">+11 (000) 111-11-11</a>
           </li>
@@ -67,13 +73,27 @@
           <li class="portfolio-services-list-item">
             <a  href="" class="link portfolio-link" target="_blank" rel="noreferrer noopener">
               <div class="overlay-area">
-              <img
+              <picture>
+                <source media="(min-width: 1158px)"
+                srcset="./images/portfolio-page-mobile/desctop/desctop-banking.webp 1x, ./images/portfolio-page-mobile/desctop/desctop-banking@2x.webp 2x"/>
+                <source media="(min-width: 1158px)"
+                srcset="./images/portfolio-page-mobile/desctop/desctop-banking.jpg 1x, ./images/portfolio-page-mobile/desctop/desctop-banking@2x.jpg 2x"/>
+
+                <source media="(min-width: 768px)"
+                srcset="./images/portfolio-page-mobile/tablet/tablet-banking.webp 1x, ./images/portfolio-page-mobile/tablet/tablet-banking@2x.webp 2x"/>
+                <source media="(min-width: 768px)"
+                srcset="./images/portfolio-page-mobile/tablet/tablet-banking.jpg 1x, ./images/portfolio-page-mobile/tablet/tablet-banking@2x.jpg 2x"/>
+
+                <source media="(max-width: 767px)"
+                srcset="./images/portfolio-page-mobile/mobile/banking-mobile.webp 1x, ./images/portfolio-page-mobile/mobile/banking-mobile@2x.webp 2x"/>
+                <source media="(max-width: 767px)"
+                srcset="./images/portfolio-page-mobile/mobile/banking-mobile.jpg 1x, ./images/portfolio-page-mobile/mobile/banking-mobile@2x.jpg 2x">
+                <img
                 class="portfolio-image"
                 src="./images/images-portfolio/row-1/banking-app.jpg"
                 alt="visual sample of banking app"
-                width="360"
-                height="300"
-              />
+                />
+            </picture>
               <p class="portfolio-overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
               <div class="portfolio-card-content">
@@ -295,6 +315,110 @@
   
   </div>
      </footer>
+
+     <div class="menu-container js-menu-container list" id="mobile-menu">
+      
+      <button class="mobile-menu-close js-close-menu">
+        <svg class="mobile-cross" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu mobile-menu-pages list">
+        <li class="mobile-menu-item">
+          <a
+            class="mobile-menu-link link"
+            href="./index.html"
+            >Studio</a
+          >
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link menu-link-portfolio-underline link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Contacts</a>
+        </li>
+      </ul>
+      
+      <address class="mobile-address">
+        <ul class="mobile-menu list">
+          <li class="mobile-menu-address-tel">
+            <a class="mobile-contact-info mobile-contact-info-tel link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="mobile-menu-address-mail">
+            <a class="mobile-contact-info mobile-contact-info-mail link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+
+      <ul class="mobile-menu sm-footer sm-footer-mobile list">
+        <li class="sm-footer-item">
+          <a
+            href=""
+            class="sm-footer-link sm-list-link sm-footer-link-mobile"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Instagram"
+          >
+            <svg class="sm-footer-icon sm-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="sm-footer-item">
+          <a
+            href=""
+            class="sm-footer-link sm-list-link sm-footer-link-mobile"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Twitter"
+          >
+            <svg class="sm-footer-icon sm-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="sm-footer-item">
+          <a
+            href=""
+            class="sm-footer-link sm-list-link sm-footer-link-mobile"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Facebook"
+          >
+            <svg class="sm-footer-icon sm-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="sm-footer-item">
+          <a
+            href=""
+            class="sm-footer-link sm-list-link sm-footer-link-mobile"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Linkedin"
+          >
+            <svg class="sm-footer-icon sm-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/mobile-menu.js"></script>
      <script src="./js/modal.js"></script>
   </body>
 </html>
